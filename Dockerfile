@@ -9,7 +9,8 @@ WORKDIR /var/www
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
-    mariadb-client \
+    # mariadb-client \
+    default-mysql-client \
     libzip-dev \
     libpng-dev \
     libjpeg62-turbo-dev \
